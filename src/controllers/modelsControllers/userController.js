@@ -86,7 +86,6 @@ const putUser = async (id, user) => {
 			}
 		}
 		const response = await User.findById(id);
-		console.log(response);
 		return { username: response.username, message: 'user was updated' };
 	} catch (e) {
 		console.log('error ocurred in userController at putUser() ', e.message);
@@ -105,8 +104,6 @@ const putUser = async (id, user) => {
 const getUserById = async (id) => {
 	try {
 		const response = await User.findById(id);
-
-		console.log('from controller', response);
 		return response;
 	} catch (e) {
 		console.log('error ocurred in userController at getUserById() ', e.message);

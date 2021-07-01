@@ -67,7 +67,7 @@ authenticationRouter.get('/logout', async (req, res) => {
 });
 
 /* '/reset-password'  to reset user password in the application */
-authenticationRouter.get('/reset-password', isLoggedIn, async (req, res) => {
+authenticationRouter.put('/reset-password', isLoggedIn, async (req, res) => {
 	try {
 		const isPasswordCorrect = await User.findOne({ password: req.body.oldpassword });
 		if (isPasswordCorrect) {
