@@ -13,7 +13,7 @@ These 4 endpoints are available with the following structure
 ```
 POST {{host}}:{{port}}/signup
 POST {{host}}:{{port}}/login
-GET {{host}}:{{port}}/users/:id ( where id is a dynamic value ) 
+GET {{host}}:{{port}}/users/id ( where id is a dynamic value ) 
 PUT {{host}}:{{port}}/reset-password 
 ```
 
@@ -21,8 +21,8 @@ So in order for these endpoint to be usable there were multiple endpoints implem
 ```
 GET {{host}}:{{port}}/logout -- to logout from the authentication session
 GET {{host}}:{{port}}/users/  -- To get all values
-PUT {{host}}:{{port}}/users/:id ( where id is a dynamic value ) to put a value into the model
-DELETE {{host}}:{{port}}/users/:id -- to delete a specific user
+PUT {{host}}:{{port}}/users/id ( where id is a dynamic value ) to put a value into the model
+DELETE {{host}}:{{port}}/users/id -- to delete a specific user
 ```
 
 To start using the project do the one of the following methods : 
