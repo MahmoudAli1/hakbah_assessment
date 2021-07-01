@@ -10,7 +10,7 @@ The aim of this assessment is to provide the following endpoints :
 These 4 endpoints are available with the following structure 
 ```
 POST {{host}}:{{port}}/signup
-POST {{host}}:{{port}}/loginG
+POST {{host}}:{{port}}/login
 GET {{host}}:{{port}}/users/:id ( where id is a dynamic value ) 
 PUT {{host}}:{{port}}/reset-password 
 ```
