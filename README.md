@@ -6,6 +6,8 @@ The aim of this assessment is to provide the following endpoints :
   3. Get User Profile (GET)
   4. Change Password (PUT)
 
+The assessment was implemented using ExpressJS, MongoDB and Passport for authentication.
+
 
 These 4 endpoints are available with the following structure 
 ```
