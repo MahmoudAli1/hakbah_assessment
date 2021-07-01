@@ -12,9 +12,34 @@ The assessment was implemented using ExpressJS, MongoDB and Passport for authent
 These 4 endpoints are available with the following structure 
 ```
 POST {{host}}:{{port}}/signup
+
+request body :
+{
+    "username":"string",
+    "email":"correct@format.com",
+    "password":"string",
+    "age":number,
+    "gender":"string"
+}
+
+
 POST {{host}}:{{port}}/login
+
+request body :
+{
+    "username":"string",
+    "password":"string",
+}
+
 GET {{host}}:{{port}}/users/id ( where id is a dynamic value ) 
+
 PUT {{host}}:{{port}}/reset-password 
+request body : 
+{
+        "oldpassword":"string",
+        "newpassword":"string"
+}
+
 ```
 
 So in order for these endpoint to be usable there were multiple endpoints implemented which are :
