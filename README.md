@@ -23,14 +23,27 @@ PUT {{host}}:{{port}}/users/:id ( where id is a dynamic value ) to put a value i
 DELETE {{host}}:{{port}}/users/:id -- to delete a specific user
 ```
 
-To start using the project do the following : 
+To start using the project do the one of the following methods : 
 
+#1 Easy Installment Method : 
 
 You need to download docker from the official website 
 use the docker image with the following command 
 https://docs.docker.com/get-docker/
 
-then you need to run 
+then you need to clone the repo on your workspace
+
+```
+git clone https://github.com/MahmoudAli1/hakbah_assessment.git
+
+```
+
+after that you need to move to the project directory using 
+```
+cd hakbah_assessment
+```
+
+after that you need to run 
 ```
 docker build -t hakbah .
 ```
@@ -42,14 +55,22 @@ after that you'll be able to see the logs through the following command
 ```
 docker logs -f hakbah -n 1000
 ```
-and if you want to stop the application from being running you can use the following command 
+
+
+
+
+## if you want to stop the application from being running you can use the following command 
 ```
 docker rm -f hakbah
 ```
 
 
+# Classic Method : 
+
 you need first to download mongodb using the following link 
 https://docs.mongodb.com/manual/installation/ depending on your machine 
+
+after that you need to make sure that mongo is running successfully on port 27017 ( default port )
 
 then 
 ```
@@ -66,7 +87,7 @@ Then run
 npm run start:prod --> for production
 ```
 
-in case you want to run in locallay ( dev ) you need to add the env variables in the following manner 
+in case you want to run in locallay [ dev ] you need to add the env variables in the following manner 
 ```
 PORT= //default -> 6666
 HOST= //default -> localhost 
